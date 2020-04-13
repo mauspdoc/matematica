@@ -146,5 +146,4 @@ Veja a ilustração abaixo, onde mostra o teste de limites:
 >
 >    
 
-# Segundo Richard A. Silverman
-
+#
