@@ -135,11 +135,25 @@ Podemos estabelecer uma correspondência entre os números de uma reta e os núm
 2. Cada número real corresponde a exatamente um ponto da reta.
 3. A distância entre dois pontos é o valor absoluto da diferença entre os números correspondentes.
 
+![](/home/mauspdoc/Documentos/Educacional/Matemática/imagens/barbosa/7.png)
+
+Na figura foi estabelecido que o número real -2 está em correspondência com o ponto $S$, o 0 com o ponto $P$ . 
+
+A correspondência de um ponto da reta com o número real é chamada de sistema de de coordenadas para a reta. O número correspondente a qualquer ponto da reta é chamado de coordenada do ponto. 
+
+Se tivermos dois pontos $A$ e $B$ cujas coordenadas são $a$ e $b$ respectivamente, a distância entre os pontos $A$ e $B$ é dada por $AB = | a - b|$ .  
+
+## Axioma 3[^1]
+
+> Se o ponto $C$ encontra-se entre $A$ e $B$ então $AC + CB = AB$. 
+
+Podemos dizer que $y$ ( um número real designado para o ponto C) está entre $x$ e $z$ independente se $x<y<z$ ou $z<y<x$.
+
+Disso tiramos que se C está entre A e B , temos duas ideias equivalentes : A-C-B ou B-C-A . O importante é o "estar entre". 
 
 
 
-
-
+[^1]: Muitos autores como a Eliana Quelho Frota Rezende e Edwin Moise usam isso apenas como uma definição, invés de axioma ou postulado
 
 ##   
 
