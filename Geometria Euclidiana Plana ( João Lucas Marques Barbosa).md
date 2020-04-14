@@ -50,7 +50,7 @@
 > >
 > > Definição 1.4 da pagina 17 em Geometria Euclidiana Plana( Rezende ):
 > >
-> > > Seja A,B e C três pontos colineares e distintos dois a dois. Se $AB+BC=AC$ , dizemos que $B$ está entre $A$ e $C$ , o que denotamos por $A-B-C$ . Observe também que se demos $A-B-C$ , então temos também $C-B-A$ 
+> > > Seja A,B e C três pontos colineares e distintos dois a dois. Se $AB+BC=AC$ , dizemos que $B$ está entre $A$ e $C$ , o que denotamos por $A-B-C$ . Observe também que se temos $A-B-C$ , então temos também $C-B-A$ , pois o importante é o $B$ estar entre esses dois pontos.
 
 **Definição 1**
 
@@ -64,4 +64,34 @@
 >
 > > Observação do autor:
 > >
-> > Dois pontos A e B determinam duas semi-retas $S_{AB}$ e $S_{BA}$ , as quais contém o segmento AB.
+> > Dois pontos A e B determinam duas semi-retas $S_{AB}$(origem no ponto $A$) e $S_{BA}$(origem no ponto $B$) , as quais contém o segmento AB.
+> >
+> > Complemento:
+> >
+> > > Definição 1.8 da pagina 18 em Geometria Euclidiana Plana( Rezende ):
+> > >
+> > > "A semi-reta de origem $A$ contendo $B$ , a qual é denotada por $\overrightarrow{AB}$, é definida como a união dos pontos do segmento $AB$ com o conjuntos dos pontos $X$ tais que $A-B-X$. O ponto $A$ é denominado origem da semi-reta "
+> > >
+> > > ![](/home/mauspdoc/Documentos/Educacional/Matemática/imagens/barbosa/5.png)
+> > >
+> > > Veja que a frase indica que B está entre A e X, ou seja : A-B-X ou X-B-A seriam formas corretas, que dão sentido a duas semi-retas diferentes. 
+
+**Proposição 1 ** 
+
+> 1. $S_{AB} \cup S_{BA}$ é a reta determinada pelos pontos $A$ e $B$. 
+> 2. $S_{AB} \cap S_{BA}$ = AB 
+>
+> Prova:
+>
+> > Veja que $S_{AB}$ e $S_{BA}$ contém o segmento AB em comum de acordo com a definição 2 , portanto a interseção $S_{AB} \cap S_{BA}$ é o segmento AB . 
+> >
+> > $S_{AB}$ é uma semi-reta , ou seja, além de ser constituído pelo segmento  AB , também é composta por todos os pontos C de tal forma que B está entre A e C. 
+> >
+> > Já $S_{BA}$ é um semi-reta que contém o segmento AB e é composta por todos os pontos C de tal forma que A está entre B e C. 
+> >
+> > Resumindo esses casos:
+> >
+> > * Se C está entre A e B, então é o segmento AB
+> > * Se B está entre A e C(estamos falando de todos os pontos de uma reta qualquer) , então temos $S_{AB}$  
+> > * Se A está entre B e C, então temos $S_{BA}$.
+
