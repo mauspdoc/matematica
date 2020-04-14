@@ -1,5 +1,49 @@
 # Introdução À Lógica
 
+Segundo Cezar A. Mortari:
+
+> Lógica é a ciência que estuda princípios e métodos de inferência, tendo o objetivo principal de determinar em que condições certas coisas se seguem (são consequência), ou não, de outras.
+
+Segundo John Nolt,Dennis Rohatyn:
+
+> Lógica é o estudo de argumentos. Um argumento é uma sequência de enunciados na qual um dos enunciados é a conclusão e os demais são premissas, as quais servem para provar ou, pelo menos, fornecer alguma evidência para a conclusão.
+
+# Lógica e Argumentos
+
+## Validade e Forma
+
+$(A_{1})$ 
+
+> $P_{1}$    Todo gato é mamífero.
+>
+> $P_{2}$ 	Miau é um gato.
+>
+> $\blacktriangleright$ 	 Miau é um mamífero.
+
+$(A_{2})$
+
+> *Considerando Lulu como cachorro*:
+>
+> $P_{1}$    Todo gato é mamífero.
+>
+> $P_{2} $    Lulu é um mamífero.
+>
+> $\blacktriangleright$ 	Lulu é um gato.
+
+$A_{3}$
+
+> $P_{1} $	Todo peixe é dourado.
+>
+> $P_{2}$	Cléo é um peixe.
+>
+> $\blacktriangleright$ 	Cléo é dourado. 
+
+A conclusão de $A_{1}$ é evidentemente correta, "Miau" é um mamífero é adequadamente justificado pelas premissas : sendo Miau um gato, a afirmação de que todo gato é um mamífero também o inclui; assim, ele não tem como não ser mamífero.
+
+Observe no $A_{2}$ , a conclusão está errada , apesar de as premissas serem verdadeiras. Lulu é uma mamífero de fato, entretanto, não é um gato , isso logicamente é suportado pela existência de inúmeros mamíferos. Assim, mesmo que as premissas sejam verdadeiras, não são suficientes para justificar a conclusão.
+
+
+
 # Cálculo Proposicional 
 
 É a parte da lógica matemática que estuda a validade dos argumentos apresentados, em uma linguagem própria, a linguagem proposicional. 
@@ -267,3 +311,50 @@ Exemplos:
 
 1. Verifique as preposições a seguir:
    1. O Brasil foi colônia de Portugal, mas hoje é um país independente.
+      1. <img src="/home/mauspdoc/Documentos/Educacional/Matemática/imagens/Logica/1.png" style="zoom:70%;" />
+   2. Vivemos em um país da América Latina, portanto, nosso idioma é proveniente do Latim.
+      1. <img src="/home/mauspdoc/Documentos/Educacional/Matemática/imagens/Logica/2.png" style="zoom:70%;" />
+   3. Só cursamos a faculdade, se obtivermos aprovação no vestibular. 
+      1. P(V) =  Cursaremos a faculdade 
+      2. Q(V) = Obtivermos aprovação no vestibular
+      3. P $\iff$ Q (V)
+   4. Se D. Pedro proclamou a independência do Brasil, ou declarou guerra à Inglaterra, então, o Brasil foi colônia da Inglaterra.  
+      1. <img src="/home/mauspdoc/Documentos/Educacional/Matemática/imagens/Logica/4.png" style="zoom:67%;" />
+
+#### Complemento
+
+###### "Ou"
+
+Uma fase composta pelo conectivo "ou" é verdadeira caso tenha pelo menos uma de suas proposições simples como verdade.
+
+Entretanto, se o "ou" for de uso exclusivo, temos:
+
+ 
+
+|  P   |  Q   | P $\vee$ Q |
+| :--: | :--: | :--------: |
+|  V   |  V   |     F      |
+|  V   |  F   |     V      |
+|  F   |  V   |     V      |
+|  F   |  F   |     F      |
+
+O conectivo "ou" com o sentido de exclusivo pode ser denotado formalmente como $(P \vee Q ) \wedge \neg(P \wedge V)$ :
+
+
+
+## Classificação Proposicional 
+
+### Tautologia / Tautológica
+
+Uma proposição composta cujo valor lógico é sempre verdade, independente do valor lógico das proposições simples que a compõe.
+
+### Contradição
+
+Uma proposição cujo valor lógico é sempre falso, independente do valor lógico das proposições simples que a compõe.
+
+### Contingência 
+
+O valor lógico da proposição composta pode ser verdadeiro ou falso dependendo do valor lógico de suas proposições simples. 
+
+# Cálculo de Predicados  ( Cálculo Funcional)
+
