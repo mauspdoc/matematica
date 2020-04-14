@@ -48,7 +48,7 @@ Exemplo:
 >
 >    Então teremos: Se A, então S.
 
-## Princípios da Lógica Clássica
+### Princípios da Lógica Clássica
 
 A lógica matemática segue alguns princípios como regras fundamentais:
 
@@ -70,7 +70,7 @@ A lógica matemática segue alguns princípios como regras fundamentais:
   >
   > P ou não P (ou exclusivo)
 
-## Conectivos Proposicionais 
+### Conectivos Proposicionais 
 
 * e ( $ \wedge $ )
 * ou ( $ \vee $)
@@ -78,11 +78,11 @@ A lógica matemática segue alguns princípios como regras fundamentais:
 * se, e somente se ( $\iff$ )
 * não ( $\neg$ ou $\sim$)
 
-## Classificação dos Conectivos
+### Classificação dos Conectivos
 
-### Conjunção ( $\wedge$  ou 'e' )
+#### Conjunção ( $\wedge$  ou 'e' )
 
-É o resultado da combinação de duas proposições ligadas pelo conectivo **e**, e que será simbolizada por $\wedge$ . A conjunção pode ser expressa também por palavras como : *mas, todavia, contudo , no entanto , visto que , enquanto , além disso , embora* 
+É o resultado da combinação de duas proposições ligadas pelo conectivo **e**, e que será simbolizada por $\wedge$ . A conjunção pode ser expressa também por palavras como : *mas, todavia, contudo , no entanto , visto que , enquanto , além disso , embora*.
 
 Exemplo:
 
@@ -107,11 +107,11 @@ c) André foi ao baile, mas Maria ficou em casa.
 >
 > simbolicamente : B $ \wedge $ C
 
-### Disjunção ($\vee$  ou  'ou')
+#### Disjunção ($\vee$  ou  'ou')
 
 É o resultado de duas proposições ligadas pelo conectivo "ou" , que será simbolizado por $\vee$ . 
 
-Na linguagem coloquial o "ou" pode ser empregado em dois sentidos "exclusivo" ou "inclusivo"
+Na linguagem coloquial o "ou" pode ser empregado em dois sentidos "exclusivo" ou "inclusivo".
 
 Exemplo:
 
@@ -123,13 +123,13 @@ Exemplo:
 
 No cálculo proposicional, o "ou" inclusivo é o mais abordado. 
 
-### Condicional ($\implies$)
+#### Condicional ($\implies$)
 
 Caso uma frase possa ser disposta da seguinte forma:
 
 > Se (proposição 1) , então (proposição 2).
 
-O símbolo utilizado para ligar as duas proposições é $\implies$ 
+O símbolo utilizado para ligar as duas proposições é $\implies$.
 
 Exemplo:
 
@@ -161,7 +161,7 @@ c) Se todos os homens são mortais e Sócrates é um homem, então Sócrates é 
 >
 > Observação : Parênteses indica a ordem de operação. 
 
-### Bicondicional ($\longleftrightarrow$)
+#### Bicondicional ($\longleftrightarrow$)
 
 Toda proposição que pode ser colocada da seguinte forma:
 
@@ -185,13 +185,13 @@ a) Só ganharás o dinheiro se completares o trabalho.
 >
 > Simbolicamente: $D \longleftrightarrow T$ .
 
-### Negação ( $ \neg $)
+#### Negação ( $ \neg $)
 
 Não conecta duas proposições, mas simplesmente nega a afirmação da proposição que o precede. 
 
 É um conectivo unário ( Caso fosse binário , ligaria duas proposições).
 
-Se uma proposição P é verdadeira , então a sua negação(não P) resulta em falsa e vice-versa. Simbolizado por "$ \neg$"
+Se uma proposição P é verdadeira , então a sua negação(não P) resulta em falsa e vice-versa. Simbolizado por "$ \neg$".
 
 Exemplos:
 
@@ -203,7 +203,7 @@ b) Alfredo não gosta de trabalhar.
 
 > Se P = Alfredo gosta de trabalhar , então $\neg$P = Alfredo não gosta de trabalhar.
 
-## Formalização
+### Formalização
 
 O processo de formalização consiste em converter um conjunto de proposições interligadas em uma estrutura composta de letras proposicionais, conectivos lógicos e símbolos de pontuação.
 
@@ -223,8 +223,47 @@ Ordem de precedência:
 
   
 
+Exemplos de frases:
 
+1. Interprete a letra sentencial "C" como "Está chovendo" e letra "N" como "Está nevando", e expresse a forma de cada sentença:
+   1. Está chovendo.
+      * C
+   2. Não está chovendo.
+      * $\neg$C
+   3. Está chovendo ou nevando.
+      * $C \vee N$
+   4. Está chovendo e nevando.
+      * $C \wedge N$
+   5. Está chovendo, mas não está nevando.
+      * $C \wedge \neg N$
+   6. Não está chovendo  e nevando.
+      * $\neg(C \wedge N)$
+   7. Se não está chovendo, então está nevando.
+      * $\neg C \implies N$ 
 
- 
+## Tabela verdade
 
- 
+Para determinar o valor-verdade (V) ou (F) de uma proposição composta, usa-se a tabela verdade , na qual figuram todas as possibilidades para as proposições simples (p e q) que compõem a proposta.
+
+|      |      |  Conjunção   | Disjunção  |  Condicional   | Bicondicional |
+| :--: | :--: | :----------: | :--------: | :------------: | :-----------: |
+|  p   |  q   | p $\wedge$ q | p $\vee$ q | p $\implies$ q |  p $\iff$ q   |
+|  V   |  V   |      V       |     V      |       V        |       V       |
+|  V   |  F   |      F       |     V      |       F        |       F       |
+|  F   |  V   |      F       |     V      |       V        |       F       |
+|  F   |  F   |      F       |     F      |       V        |       V       |
+
+ Tabela para a negação( conectivo unário), tomando **p** como uma proposição simples.
+
+|      | Negação |
+| :--: | :-----: |
+|  p   | $\neg$p |
+|  V   |    F    |
+|  F   |    V    |
+
+O número de linhas numa tabela depende do número de proposições simples , sendo $n$ o número de proposições simples, a fórmula para calcular isso é $2^n$. Na primeira tabela temos duas proposições simples $p$ e $q$ , logo temos $2^2$ linhas , ou seja, 4. Na segunda tabela temos apenas uma proposição simples , logo 2 linhas.
+
+Exemplos:
+
+1. Verifique as preposições a seguir:
+   1. O Brasil foi colônia de Portugal, mas hoje é um país independente.
