@@ -28,21 +28,55 @@ $(A_{2})$
 >
 > $P_{2} $    Lulu é um mamífero.
 >
-> $\blacktriangleright$ 	Lulu é um gato.
+> $\blacktriangleright$     Lulu é um gato.
 
-$A_{3}$
+($A_{3}$)
 
+> *Considerando Cléo como um peixinho dourado*:
+>
 > $P_{1} $	Todo peixe é dourado.
 >
 > $P_{2}$	Cléo é um peixe.
 >
 > $\blacktriangleright$ 	Cléo é dourado. 
 
+[^1]: Esse símbolo indica a conclusão do raciocínio, alguns autores usam  $\therefore$  ou $\vdash$ 
+
 A conclusão de $A_{1}$ é evidentemente correta, "Miau" é um mamífero é adequadamente justificado pelas premissas : sendo Miau um gato, a afirmação de que todo gato é um mamífero também o inclui; assim, ele não tem como não ser mamífero.
 
 Observe no $A_{2}$ , a conclusão está errada , apesar de as premissas serem verdadeiras. Lulu é uma mamífero de fato, entretanto, não é um gato , isso logicamente é suportado pela existência de inúmeros mamíferos. Assim, mesmo que as premissas sejam verdadeiras, não são suficientes para justificar a conclusão.
 
+Em $A_{3}$ , apesar da conclusão ser verdadeira, pois Cléo é um peixe dourado, não seria correto dizer que a conclusão está sustentada com base nas premissas apresentadas, visto que nem todo peixe é dourado, há peixes de cores variadas. Logo, uma proposição falsa não é uma boa justificativa para outra proposição.
 
+Podemos generalizar esses exemplos com a seguinte forma:
+
+$ (F1) $
+
+> $P_{1}$	Todo A é B.
+>
+> $P_{2}$	c é A. 
+>
+> $\blacktriangleright$	c é B
+
+A forma do $A_{2}$ pode ser generalizada por:
+
+$(F2)$
+
+> $P_{1}$	Todo A é B.
+>
+> $P_{2}$	c é um B.
+>
+> $\blacktriangleright$	c é A.
+
+Todo argumento na forma $F1$ é considerado válido, enquanto que todo argumento na forma $F2$ é inválido.
+
+Veja que em $A_{1},A_{3}$, as premissas são verdadeiras e a conclusão é consequência lógica de suas premissas, logo , são argumentos válidos. Entretanto, em $A_{2}$ , apesar das premissas serem verdadeiras , a conclusão não é consequência lógica de suas premissas. 
+
+Definição de argumento válido segundo Cezar:
+
+> Um argumento é válido se qualquer circunstância que torna suas premissas verdadeiras faz com que sua conclusão seja automaticamente verdadeira.
+
+Reforçando: Se um argumento é válido, dizemos que sua conclusão é consequência lógica de suas premissas. O que não pode ocorrer também é ter premissas verdadeiras e a conclusão falsa como em $A_{2}$, nesse caso o argumento é inválido.
 
 # Cálculo Proposicional 
 
@@ -167,6 +201,42 @@ Exemplo:
 
 No cálculo proposicional, o "ou" inclusivo é o mais abordado. 
 
+Exemplos:
+
+a) $P_{1}$ Hoje é segunda-feira ou terça-feira.
+
+​	$P_{2}$ Hoje não é segunda-feira.
+
+​	$\blacktriangleright$ Hoje é terça-feira.
+
+> ​	Numa sentença disjuntiva( proposição com conectivo "ou") precisa que ao menos uma de suas proposições simples seja verdade. 
+>
+> Q = Hoje é segunda-feira.
+>
+> P = Hoje é terça-feira.
+>
+> Para a frase ser verdadeira precisamos que entre Q e P , pelo menos um deles precisa ser verdade. Como $P_{2}$ nega Q , então P precisa ser verdade.
+
+b) $P_{1}$ Ele é menor de 18 anos ou ele é jovem.
+
+​	$P_{2}$ Ele não é menor de 18 anos.
+
+​	$\blacktriangleright$ Ele é jovem.
+
+> Veja que o exemplo b segue a mesma forma do exemplo a. Essa forma pode ser generalizada para:
+>
+> $P_{1}$ P ou Q
+>
+> $P_{2}$ Não P
+>
+> $\blacktriangleright$ Q.
+>
+> Pode-se ser lida como "ou P ou Q; não P; portanto Q.". 
+>
+> Essa forma é conhecida como silogismo disjuntivo. 
+>
+> Observação: Q e P são conhecidos como *disjunctos*.
+
 #### Condicional ($\implies$)
 
 Caso uma frase possa ser disposta da seguinte forma:
@@ -204,6 +274,26 @@ c) Se todos os homens são mortais e Sócrates é um homem, então Sócrates é 
 > Simbolicamente : $(H \wedge S)\implies M$
 >
 > Observação : Parênteses indica a ordem de operação. 
+
+Frases Inválidas:
+
+a) $P_{1}$ Se você está dançando na Lua, então você está vivo.
+
+​	$P_{2}$ Você está vivo.
+
+​	$\blacktriangleright$ Você está dançando na Lua.
+
+> ​	As premissas são verdadeiras , entretanto, a conclusão é falsa , logo é o argumento é inválido.
+
+b) $P_{1}$ Se jogamos bem, ganhamos.
+
+​	$P_{2}$ Nós ganhamos.
+
+​	$\blacktriangleright$ Jogamos bem.
+
+> Esse exemplo b segue a mesma forma que o exemplo a. Essa forma é conhecida como *afirmação do consequente*.
+>
+> Observação : "Se P, então Q ." , consideramos P como sendo antecedente e Q como consequente.
 
 #### Bicondicional ($\longleftrightarrow$)
 
