@@ -54,3 +54,40 @@ Uma fórmula geral para achar a quantidade números entre a e b ( considerando-o
 <img src="imagens/contagem/3.png" style="zoom:80%;" />
 
 Então, a maior parte dos problemas pode ser resolvida ao converter o problema em problemas mais simples e que tenhamos noção.
+
+#### Problema 3
+
+Texto:
+
+> Quantos múltiplos de 3 há entre 62 e 215 ?
+
+Vemos que $\normalsize \frac{62}{3}=20 \frac{2}{3}$ , então o menor múltiplo de 3 em nossa lista é $3 \times 21 = 63$. De forma parecida , $\normalsize \frac{215}{3}=71 \frac{2}{3}$, então o maior múltiplo de 3 dentro da lista é $3 \times 71 = 213$. Então nossa lista de múltiplos é :
+
+> 63, 66, 69 , ..., 213.
+
+Podemos converter essa lista para uma que conhecemos como contar, podemos dividir cada item por 3:
+
+> 21, 22, 23, ..., 71
+
+E como vimos anteriormente , podemos tornar essa lista mais óbvia ao converter em outra. O que pode ser alcançado subtraindo 20 de cada item:
+
+> 1, 2 , 3, ..., 51 
+
+Então há 51 que são múltiplos de 3 na lista (de 62 a 215). 
+
+#### Problema 4
+
+a) Quantos múltiplos há entre 9 e 101 ?
+
+É fácil notar que a lista de possíveis múltiplos é 10,20,30,40,50,60,70,80,90,100 , ou seja, 10 múltiplos. Poderíamos inclusive dividir cada item por 10 para ordenar na ordem em que aparecem, teríamos  : 1,2,3,4,5,6,7,8,9,10.
+
+b) Quantos múltiplos há entre 11 e 103 ?
+
+A lista de múltiplos agora vai de 20,...,100  , logo são apenas 9 múltiplos. Caso dividir cada item por 10 para ordenar conforme surge , temos : 2, ..., 10 . Nesse caso ainda temos 9 itens.  Poderíamos ainda tornar essa sequência mais natural ao subtrair 1 de cada termo , o que resulta em : 1, ..., 9.
+
+#### Problema 5
+
+Texto:
+
+> Quantos números de 4 dígitos são cubos perfeitos (ex : 27 é um cubo perfeito,pois $3^3=27$.)
+
