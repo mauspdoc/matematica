@@ -75,6 +75,18 @@ E como vimos anteriormente , podemos tornar essa lista mais óbvia ao converter 
 
 Então há 51 que são múltiplos de 3 na lista (de 62 a 215). 
 
+Observação :
+
+> O penúltimo e último são relativamente simples. Vamos analisar os múltiplos do número 2 :
+>
+> $2 \times {\color{red}1};2 \times {\color{red}2}; 2 \times {\color{red}3}; 2 \times {\color{red}4}...$
+>
+> Isso dá resultado para a seguinte lista de múltiplos :
+>
+> 2, 4, 6, 8...
+>
+> Veja que os números em vermelho formam uma sequência que indica a ordem em que os múltiplos aparecem, o número 2 é o $\color{red}1 º$ ( primeiro) múltiplo de 2 , e essa lógica pode ser aplicada para todos os itens dessa sequência. 
+
 #### Problema 4
 
 a) Quantos múltiplos há entre 9 e 101 ?
@@ -91,3 +103,40 @@ Texto:
 
 > Quantos números de 4 dígitos são cubos perfeitos (ex : 27 é um cubo perfeito,pois $3^3=27$.)
 
+Obviamente testar número por número é uma opção inviável. O que podemos fazer é encontrar o menor e o maior número da nossa lista, talvez até encontrar uma forma mais conveniente de contar todos os números entre eles depois disso.
+
+O menor número de 4 dígitos, que é um cubo perfeito, é $1000=10^3$.
+
+O maior número talvez seja um pouquinho mais complicado. Isso exige fazer testes, podemos usar o método de tentativa e erros. Temos a noçao de que $20^3=8000$, então vamos tentar com números depois de 20:
+
+> $21^3=9261 \\ 22^3=10648$
+
+Veja que o número 22 ao cubo ultrapassa o limite da nossa lista, pois resulta em número de 5 dígitos. Nesse caso, o $21^3 = 9261$ é o maior número da nossa lista que contém apenas números de 4 dígitos. Então, nossa lista é :
+
+>  $1000,...,9261$ 
+
+Podemos escrever essa mesma lista assim :
+
+> $10^3,11^3,12^3,...,20^3,21^3$
+
+Claramente podemos notar que a quantidade de números é igual a quantidade números da lista abaixo:
+
+> $10,11,12,...,20,21$
+
+Logo, há 12 números na lista, o que é nossa resposta.
+
+### Contando com adição e subtração
+
+#### Problema 1 
+
+> ​	Numa escola há 12 jogadores em um time de futebol. Todos os jogadores precisam frequentar pelo menos um aula de língua estrangeira. A escola oferece apenas espanhol ou francês como língua estrangeira. 8 dos jogadores assistem aulas de Espanhol e 5 frequentam ambas as aulas de língua. Quantos jogadores fazem Francês.
+
+Os jogadores que frequentam as aulas de Francês podem ser classificados em **duas categorias**: Aqueles que também frequentam aulas de Espanhol, e aqueles que não enfrequentam as aulas de Espanhol. 
+
+Como dito no texto, **o número de jogadores que frequentam tanto Espanhol quanto Francês é 5.**
+
+Agora precisamos encontrar o número de jogadores que não fazem Espanhol, mas fazem Francês. Veja que há 12 jogadores no time ao todo, sendo que 8 deles fazem Espanhol, então os que não fazem Espanhol é $12-8=4$ . Como cada jogador do time precisa frequentar pelo menos uma aula de idioma estrangeiro, **logo, esses 4 só podem ser os que fazem Francês**.
+
+Então, o total de jogadores que fazem Francês é a soma dessas duas categorias $5+4 = 9$. Nove são os que fazem Francês.
+
+  

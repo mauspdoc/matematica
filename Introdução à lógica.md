@@ -40,7 +40,7 @@ $(A_{2})$
 >
 > $\blacktriangleright$ 	Cléo é dourado. 
 
-[^1]: Esse símbolo indica a conclusão do raciocínio, alguns autores usam  $\therefore$  ou $\vdash$ 
+[^1]: Esse símbolo indica a conclusão do raciocínio, alguns autores usam  $\therefore$  ou $\vdash$ \(traço de asserção). O traço de asserção é para operações horizontais.
 
 A conclusão de $A_{1}$ é evidentemente correta, "Miau" é um mamífero é adequadamente justificado pelas premissas : sendo Miau um gato, a afirmação de que todo gato é um mamífero também o inclui; assim, ele não tem como não ser mamífero.
 
@@ -245,6 +245,8 @@ Caso uma frase possa ser disposta da seguinte forma:
 
 O símbolo utilizado para ligar as duas proposições é $\implies$.
 
+A única forma de uma condicional ser falsa é quando $P_{2}(F)$ quando $P_{1}(V)$ . 
+
 Exemplo:
 
 a) Se Alberto é poliglota, então fala várias línguas. 
@@ -275,6 +277,18 @@ c) Se todos os homens são mortais e Sócrates é um homem, então Sócrates é 
 >
 > Observação : Parênteses indica a ordem de operação. 
 
+d) Se você está morto, então você está vivo.
+
+> Apesar de ser paradoxal, para uma condicional ser falso depende apenas de que a primeira setença seja verdadeira, enquanto que a segunda seja falso. 
+>
+> Como "você está morto" é falso, mas "você está vivo" é verdadeiro, temos que a frase em si está logicamente correta. 
+
+e) Se você está morto, então você pode correr na velocidade da luz 
+
+> Relembrando que para uma condicional , $p_{1} \implies p{_2}$,  ser falsa, $p_{2}$ precisa ser falsa quando $p_{1}$ for verdadeiro. 
+>
+> Logo, se ambos $p_{1},p_{2}$ são falsos, a setença continua logicamente correta. 
+
 Frases Inválidas:
 
 a) $P_{1}$ Se você está dançando na Lua, então você está vivo.
@@ -295,6 +309,14 @@ b) $P_{1}$ Se jogamos bem, ganhamos.
 >
 > Observação : "Se P, então Q ." , consideramos P como sendo antecedente e Q como consequente.
 
+c)  $P_{1}$ Se as baleias são peixes, então elas vivem na água.
+
+​	$P_{2}$ As baleias vivem na água.
+
+​	$\blacktriangleright$ As baleias são peixes
+
+> Essa forma é mais um exemplo de *afirmação do consequente*.
+
 #### Bicondicional ($\longleftrightarrow$)
 
 Toda proposição que pode ser colocada da seguinte forma:
@@ -306,6 +328,8 @@ A conexão entre as duas proposições é simbolizada por $\longleftrightarrow$.
 A bicondicional pode ser entendida como a conjunção de duas condicionais , ou seja :
 
 > $p \longleftrightarrow q$ pode ser entendido como $p \implies q$ e $q \implies p$ . 
+
+Logo, uma bicondicional só é verdadeira nos casos em que $p,q$ posuem o mesmo valor verdade (V ou F).
 
 Exemplos:
 
@@ -348,14 +372,12 @@ O processo de formalização consiste em converter um conjunto de proposições 
 Ordem de precedência:
 
 * Operações dentro do parênteses devem ser efetuadas primeiro.
-
 * A ordem de prioridade dos conectivos:
 
   - 1 º	 $\neg$
   - 2 º    $\wedge \text{ e } \vee$  
   - 3 º   $\longrightarrow$ e $\longleftrightarrow$ 
 
-  
 
 Exemplos de frases:
 
@@ -374,6 +396,68 @@ Exemplos de frases:
       * $\neg(C \wedge N)$
    7. Se não está chovendo, então está nevando.
       * $\neg C \implies N$ 
+
+Observação importante:
+
+> Expressões bem construídas são chamadas de wff(well-formed formulas) ou fórmulas bem-formuladas.
+>
+> Exemplo de uma expressão mal construída:
+>
+> $A)) \vee \vee \implies BC$   
+>
+> Expressão wwf:
+>
+> $(A \wedge B) \vee (A \wedge C) $ 
+>
+> Veja como há um respeito pela clareza e formalismo.
+
+#### Algumas palavras importantes
+
+Tenha em mente que ao ler uma frase há certas palavras chaves para formalizar :
+
+![](imagens/Logica/5.png)
+
+#### Formalizando horizontalmente:
+
+a) Se Deus existe, então a vida tem significado. Deus existe. Portanto a vida tem significado. (D,V)
+
+> $D \implies V,D \vdash V$
+>
+> O traço $\vdash$ indica que uma conclusão de uma linha de raciocínio, ou seja, é a conclusão ou a dedução das premissas, que estão a esquerda.
+
+b) Deus não existe. Pois, se Deus existisse, a vida teria significado. Mas a vida não tem significado. (D,V)
+
+> $D \implies V, \neg V \vdash \neg D$
+
+c) Se o avião não tivesse caído, nós teríamos feito contato pelo rádio. Não fizemos contato pelo rádio. Portanto, o avião caiu. (C,R)
+
+> $\neg C \implies R, \neg R \vdash C$
+
+d) Como hoje não é quinta-feira, deve ser sexta-feira. Hoje é quinta-fera ou sexta-feira. (Q,S)
+
+> $Q \vee S, \neg Q \vdash S$ 
+
+e) Se hoje é quinta-feira, então amanhã será sexta-feira. Se amanhã for sexta-feira, então depois de amanhã será sábado. Consequentemente, se hoje for quinta-feira, então depois de amanhã será sábado. ($Q,S_{1},S_{2}$)
+
+> $Q \implies S_{1},S_{1} \implies S_{2} \vdash Q \implies S_{2}$
+
+f) Hoje é um fim de semana se e somente se hoje é sábado ou domingo. Portanto, hoje é um fim de semana, desde de que hoje é sábado. (F,S,D)
+
+> $F \longleftrightarrow (S \vee D),S\vdash F $   
+
+g) Hoje é um fim de semana se hoje é sábado ou domingo. Mas, hoje não é um fim de semana. Portanto, hoje não é sabado e hoje não é domingo. (F,S,D)
+
+> $S \vee D \implies F, \neg F \vdash \neg S \wedge \neg D$
+
+h) Hoje é um fim de semana somente se hoje é sábado ou domingo. Hoje não é sábado. Hoje não é domingo. Portanto, hoje não é um fim de semana. (F,S,D)
+
+> $F \longleftrightarrow (S \vee D),\neg S,\neg D \vdash \neg F$
+
+i) A proposta de auxílio está no correio. Se os árbitros a receberem até sexta-feira, eles a analisarão. Portanto, eles a analisarão porque se a proposta estiver no correio, eles a receberão até sexta-feira. (C,S,A)
+
+> $C,S \implies A,C \implies S \vdash A$
+
+​	
 
 ## Tabela verdade
 
@@ -446,5 +530,44 @@ Uma proposição cujo valor lógico é sempre falso, independente do valor lógi
 
 O valor lógico da proposição composta pode ser verdadeiro ou falso dependendo do valor lógico de suas proposições simples. 
 
+## Tautologias
+
+### Implicação tautológica
+
+Uma implicação tautológica é uma proposição condicional tautológica
+
+#### Exemplo 1
+
+<img src="imagens/Logica/3.png" style="zoom:70%;" />
+
+### Equivalência tautológica 
+
+Quando uma proposição bicondiconal for tautológica, então ela é chamada de equivalência tautológica.
+
+## Consequência Lógica ou Dedução Formal 
+
+
+
 # Cálculo de Predicados  ( Cálculo Funcional)
 
+## Introdução
+
+### Termo e Predicado
+
+Em uma proposição simples pode-se destacar dois entes : *o termo e predicado*. O **termo** pode ser entedido como o sujeito da setença declarativa e o **predicado**, o que se declara a respeito do termo.
+
+**Exemplo**
+
+> "Amanda é responsável pelo destaque."
+>
+> termo : Amanda
+>
+> predicado: é responsável pelo destaque
+
+**Exemplo 2**
+
+> "Eles foram ao baile."
+>
+> termo : Eles
+>
+> predicado : foram ao baile
