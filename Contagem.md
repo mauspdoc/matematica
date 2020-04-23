@@ -89,7 +89,7 @@ Observação :
 
 #### Problema 4
 
-a) Quantos múltiplos há entre 9 e 101 ?
+a) Quantos múltiplos de dez há entre 9 e 101 ?
 
 É fácil notar que a lista de possíveis múltiplos é 10,20,30,40,50,60,70,80,90,100 , ou seja, 10 múltiplos. Poderíamos inclusive dividir cada item por 10 para ordenar na ordem em que aparecem, teríamos  : 1,2,3,4,5,6,7,8,9,10.
 
@@ -131,7 +131,7 @@ Logo, há 12 números na lista, o que é nossa resposta.
 
 > ​	Numa escola há 12 jogadores em um time de futebol. Todos os jogadores precisam frequentar pelo menos um aula de língua estrangeira. A escola oferece apenas espanhol ou francês como língua estrangeira. 8 dos jogadores assistem aulas de Espanhol e 5 frequentam ambas as aulas de língua. Quantos jogadores fazem Francês.
 
-Os jogadores que frequentam as aulas de Francês podem ser classificados em **duas categorias**: Aqueles que também frequentam aulas de Espanhol, e aqueles que não enfrequentam as aulas de Espanhol. 
+Os jogadores que frequentam as aulas de Francês podem ser classificados em **duas categorias**: Aqueles que também frequentam aulas de Espanhol, e aqueles que não frequentam as aulas de Espanhol. 
 
 Como dito no texto, **o número de jogadores que frequentam tanto Espanhol quanto Francês é 5.**
 
@@ -139,4 +139,49 @@ Agora precisamos encontrar o número de jogadores que não fazem Espanhol, mas f
 
 Então, o total de jogadores que fazem Francês é a soma dessas duas categorias $5+4 = 9$. Nove são os que fazem Francês.
 
-  
+  ### Contando Múltiplos Eventos
+
+#### Problema 1
+
+> Você tem 3 camisas e 4 pares calças. De quantas formas é possível formar um estilo consistindo de uma camisa e um par de calças ?
+
+Se classificarmos as camisas como $ S_{1},S_{2},S_{3}$ e os pares de calças como $P_{1},P_{2},P_{3},P_{4}$ .Poderíamos listar cada combinação :
+
+![](imagens/contagem/4.png) 
+
+Então há 12 combinações possíveis.
+
+Entretanto, fazer isso pode ser meio chato ou não permitir um raciocínio fluído. Podemos visualizar melhor essa situação desenhando uma árvore com as combinações.
+
+![](imagens/contagem/5.png)
+
+Ou podemos desenhar uma tabela :
+
+![](imagens/contagem/6.png)
+
+Das duas figuras podemos tirar as seguintes conclusões : Temos 4 opções de calças, e para cada uma dessas quatro opções de calças, temos 3 opções de camisa. Então há $4\times 3=12$ estilos possíveis.
+
+> Caso não tenha entendido a explicação de $4 \times 3$ para encontrar todos os estilos possíveis, podemos pensar da seguinte forma.
+>
+> 1 calça pode combinar com 3 camisas $\longrightarrow$  $1 P \times 3S$
+>
+> Como temos 4 calças, então temos essa situação se repetindo 4 vezes $\longrightarrow$  $4(1P \times 3S)$ 
+>
+> Logo, temos :   $12$
+
+#### Problema 2
+
+> De quantas maneiras podemos formar uma comissão internacional se devemos escolher um país europeu dentre 6 países, uma país asiático dentre 4, um país norte-americano dentre 3, e um país africano dentre 7?
+
+Desenhar uma árvore ou uma tabela não será muito útil, visto que temos muitas opções. Então, temos que seguir um raciocínio com base no que foi visto anteriormente.
+
+> Passo 1 : Há 6 formas de escolher um país europeu.
+>
+> Passo 2 : Para cada país europeu, podemos escolher um país asiático de 4 maneiras, um total de $6\times 4 = 24$  maneiras de escolher ambos, um país europeu e um país asiático.
+>
+> Passo 3 : Para cada par de países  que escolhemos no passo 1 e no passo  2, podemos escolher um país norte-americano de 3 formas. Então, há $24 \times 3 =72$ formas de escolher os 3 países até então.
+>
+> Passo 4 : Para esses três países que escolhemos até agora (Passo 1-3), podemos escolher um país africano de 7 formas. Então, há $72\times 7= 504$ maneiras de escolher 4 países.
+>
+> Então,resumindo, existe $6\times 4 \times 3 \times 7 =504$ possibilidades.
+

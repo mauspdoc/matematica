@@ -279,7 +279,7 @@ c) Se todos os homens são mortais e Sócrates é um homem, então Sócrates é 
 
 d) Se você está morto, então você está vivo.
 
-> Apesar de ser paradoxal, para uma condicional ser falso depende apenas de que a primeira setença seja verdadeira, enquanto que a segunda seja falso. 
+> Apesar de ser paradoxal, para uma condicional ser falso depende apenas de que a primeira sentença seja verdadeira, enquanto que a segunda seja falso. 
 >
 > Como "você está morto" é falso, mas "você está vivo" é verdadeiro, temos que a frase em si está logicamente correta. 
 
@@ -287,7 +287,7 @@ e) Se você está morto, então você pode correr na velocidade da luz
 
 > Relembrando que para uma condicional , $p_{1} \implies p{_2}$,  ser falsa, $p_{2}$ precisa ser falsa quando $p_{1}$ for verdadeiro. 
 >
-> Logo, se ambos $p_{1},p_{2}$ são falsos, a setença continua logicamente correta. 
+> Logo, se ambos $p_{1},p_{2}$ são falsos, a sentença continua logicamente correta. 
 
 Frases Inválidas:
 
@@ -329,7 +329,7 @@ A bicondicional pode ser entendida como a conjunção de duas condicionais , ou 
 
 > $p \longleftrightarrow q$ pode ser entendido como $p \implies q$ e $q \implies p$ . 
 
-Logo, uma bicondicional só é verdadeira nos casos em que $p,q$ posuem o mesmo valor verdade (V ou F).
+Logo, uma bicondicional só é verdadeira nos casos em que $p,q$ possuem o mesmo valor verdade (V ou F).
 
 Exemplos:
 
@@ -445,7 +445,7 @@ f) Hoje é um fim de semana se e somente se hoje é sábado ou domingo. Portanto
 
 > $F \longleftrightarrow (S \vee D),S\vdash F $   
 
-g) Hoje é um fim de semana se hoje é sábado ou domingo. Mas, hoje não é um fim de semana. Portanto, hoje não é sabado e hoje não é domingo. (F,S,D)
+g) Hoje é um fim de semana se hoje é sábado ou domingo. Mas, hoje não é um fim de semana. Portanto, hoje não é sábado e hoje não é domingo. (F,S,D)
 
 > $S \vee D \implies F, \neg F \vdash \neg S \wedge \neg D$
 
@@ -542,9 +542,13 @@ Uma implicação tautológica é uma proposição condicional tautológica
 
 ### Equivalência tautológica 
 
-Quando uma proposição bicondiconal for tautológica, então ela é chamada de equivalência tautológica.
+Quando uma proposição bicondicional for tautológica, então ela é chamada de equivalência tautológica.
 
 ## Consequência Lógica ou Dedução Formal 
+
+
+
+[^2]: Uma classe de atributos denota um conjunto de objetos
 
 
 
@@ -554,7 +558,7 @@ Quando uma proposição bicondiconal for tautológica, então ela é chamada de 
 
 ### Termo e Predicado
 
-Em uma proposição simples pode-se destacar dois entes : *o termo e predicado*. O **termo** pode ser entedido como o sujeito da setença declarativa e o **predicado**, o que se declara a respeito do termo.
+Em uma proposição simples pode-se destacar dois entes : *o termo e predicado*. O **termo** pode ser compreendido como o sujeito da sentença declarativa e o **predicado**, o que se declara a respeito do termo.
 
 **Exemplo**
 
@@ -571,3 +575,89 @@ Em uma proposição simples pode-se destacar dois entes : *o termo e predicado*.
 > termo : Eles
 >
 > predicado : foram ao baile
+
+Dada uma proposição, o predicado será indicado com uma letra maiúscula do alfabeto latino e o termo, com uma letra minúscula. O predicado ficará à esquerda do termo.
+
+**Exemplo 3**
+
+> 1. Ra
+> 2. $\neg Pa$
+> 3. Be
+
+## A Lógica dos Enunciados Categóricos
+
+A lógica proposicional é muito utilizada fundamentalmente para tratar das relações lógicas geradas pelos operadores funcional-veritativos ( "e","ou","se...então","Se somente se"). Essas relações são fundamentais, entretanto, não abrangem tudo. 
+
+> Alguns quadrúpedes são gnus.
+>
+> Todos os gnus são herbívoros.
+>
+> $\therefore$ Alguns quadrúpedes são herbívoros.
+
+
+
+O exemplo acima não seria possível colocar no formato da lógica proposicional, sequer é composto por algum operador dessa lógica. 
+
+Os enunciados do exemplo possuem uma forma característica. Entretanto, essa forma não é composta por relações funcional-veritativas entre os enunciados, mas, de relações entre atributos que denotam conjuntos ou classes com os próprios enunciados.
+
+> Algum F é G.
+>
+> Todo G é H.
+>
+> $\therefore$ Algum F é H.
+
+Revisitando o nosso primeiro exemplo:
+
+* o termo "gnu" denota todo o conjunto de gnus.
+* o termo "herbívoro" denota o conjunto de todos os herbívoros. 
+* etc...
+
+Nos enunciados, veja como os cada classes de atributos[^2] (gnu, herbívoro, quadrúpede) estão, muitas vezes, relacionados com uma outra por meio de expressões como "todo","algum", denominadas **quantificadores**. Invés de expressarem relações lógicas entre as sentenças, eles expressam relações entre os conjuntos denotados pelas classes de atributos.
+
+$P_{1}$ Aristóteles é um filósofo.
+
+$\blacktriangleright $ Alguém é um filósofo.
+
+Podemos representar a propriedade "x é filósofo" e designar a letra *a* para indicar que Aristóteles possui essa propriedade. Mas veja que o problema maior é como aplicar isso para a conclusão, pois "alguém" é um termo mais geral, não especifica quem é o indivíduo. Como veremos ainda mais no cálculo de Predicados, podemos representar o indivíduo por uma letra minúscula, enquanto que o resto que diz algo sobre ele pode ser representado por uma letra maiúscula, que fica sempre a esquerda da letra que indica o indivíduo.
+
+Então poderíamos representar Aristóteles pela letra *a*, enquanto que a propriedade "x é um filósofo" pode ser indicada por "F":
+
+> $Fa$
+>
+> Estamos afirmando que Aristóteles, $a$, possui a propriedade $F$, ou seja, é um filósofo.  
+
+Porém se estivermos afirmando que alguém é filósofo, devia ser possível generalizar a propriedade de ser filósofo. Porém como?
+
+> F...
+>
+> Generalizando F ? Essa estrutura não é muito formal 
+
+Como não podemos usar $Fa$ , F$b$ , pois essas frases estariam designando algo para uma certo indivíduo $a$ e $b$ , que poderiam ser Aristóteles e Beatriz; temos dessa forma que usar variáveis, que são letras do final do alfabeto como *k,x,y,z*. 
+
+> $Fx$
+>
+> x é uma variável.
+
+Mas ainda sofremos de um problema, esse x é um certo indivíduo ou o que? Pois essa fórmula $Fx$ indica apenas que *x é filósofo*.  A dúvida maior é se estamos de um $x$ qualquer ou de um certo $x$ . Veja os exemplos abaixo para entender melhor:
+
+> existe ao menos um x tal que x < 2. 		(1)
+>
+> qualquer que seja x, x< 2.						 (2)
+>
+> *observação : considerando apenas o conjunto dos números naturais*
+
+Nesses dois casos podemos decidir sobre a falsidade ou a verdade das declarações. A primeira é verdade, pois de fato existe números naturais menores que 2 , enquanto que a segunda afirmação é falsa, visto que  nem todos os números naturais são menores do que 2. Para a segunda afirmação poderíamos questionar a verdade ao comparar o número 4 com o número 2, o 4 é maior que o 2, então a segunda declaração não pode ser verdadeira para qualquer que seja o x.
+
+Veja que pudemos visualizar qual o valor verdade de cada afirmação do exemplo , coisa que não é possível caso tivéssemos apenas *x < 2* , pois não sabemos se o x é algo específico ou qualquer. 
+
+Veja mais um exemplo abaixo:
+
+> Prestaram concurso e foram contratados.
+
+Veja que não podemos tirar nenhum valor verdade dessa frase, não conhecemos quem foram ou foi alvo dessas declarações. Mas podemos incluir todos ou alguém e a frase , assim, assume uma estrutura interessante :
+
+> Todos que prestaram concurso foram contratados.
+>
+> Alguns dos que prestaram concurso foram contratados.
+
+Nesse caso podemos criar uma linha de raciocínio para chegar a um valor verdade. 
